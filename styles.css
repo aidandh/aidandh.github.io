@@ -1,5 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
+#centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    line-height: 1vmax;
+}
+
 #name {
     font-family: 'Roboto', sans-serif;
+    font-size: 8vmax;
+    text-align: center;
+}
+
+#icons {
+    text-align: center;
+}
+
+#icons img {
+    width: 4vmax;
+    height: 4vmax;
+    padding-left: 1vmax;
+    padding-right: 1vmax;
 }
