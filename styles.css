@@ -24,4 +24,9 @@
     height: 4vmax;
     padding-left: 1vmax;
     padding-right: 1vmax;
+    transition: 0.25s;
+}
+
+#icons img:hover {
+    transform: scale(75%);
 }
