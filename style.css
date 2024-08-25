@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.light {
+    background-color: #f9f9f9;
+    color: #272727;
+}
+
+.dark {
+    background-color: #222831;
+    color: #eeeeee;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: xx-large;
+}
+
+.light-mode-selector {
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    width: 2em;
+    height: 2em;
+    transition: all 0.3s ease;
+    background-color: transparent;
+}
+
+.light-mode-selector.light {
+    fill: #272727;
+}
+
+#light-mode.dark {
+    display: none;
+}
+
+#dark-mode.light {
+    display: none;
+}
+
+.light-mode-selector.dark {
+    fill: #eeeeee;
+}
+
+.light-mode-selector:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+#name {
+    font-size: 3em;
+}
+
+.icon {
+    width: 3em;
+    height: 3em;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    transition: all 0.3s ease;
+}
+
+.icon.light {
+    fill: #272727;
+}
+
+.icon.dark {
+    fill: #eeeeee;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+}
+
+.icon-link {
+    text-decoration: none;
+}
