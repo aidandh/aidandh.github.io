@@ -15,6 +15,7 @@ html, body {
     padding: 0;
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    font-size: xx-large;
     transition: all 0.3s ease;
 }
 
@@ -34,17 +35,14 @@ html, body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    font-size: xx-large;
 }
 
 .light-mode-selector {
-    width: 1em;
-    height: 1em;
+    width: 1.5em;
+    height: 1.5em;
     position: absolute;
     top: 1em;
     right: 1em;
-    width: 2em;
-    height: 2em;
     transition: all 0.3s ease;
     background-color: transparent;
 }
@@ -96,4 +94,10 @@ html, body {
 
 .icon-link {
     text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: large;
+    }
 }
