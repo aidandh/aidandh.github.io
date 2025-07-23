@@ -2,26 +2,25 @@
 
 <html lang="en">
 
-<!-- Putting the script here prevents flickering on load -->
-<script>
-    (function () {
-        const savedMode = localStorage.getItem('preferredMode');
-        const browserPefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        const browserPrefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
-        const browserMode = browserPefersDark ? 'dark' : browserPrefersLight ? 'light' : undefined;
-        const mode = savedMode || browserMode || 'light';
-        const root = document.documentElement;
-        if (mode === 'dark') {
-            root.classList.add('dark');
-            localStorage.setItem('preferredMode', 'dark');
-        } else {
-            root.classList.add('light');
-            localStorage.setItem('preferredMode', 'light');
-        }
-    })();
-</script>
-
 <head>
+    <!-- Putting the script here prevents flickering on load -->
+    <script>
+        (function () {
+            const savedMode = localStorage.getItem('preferredMode');
+            const browserPefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const browserPrefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+            const browserMode = browserPefersDark ? 'dark' : browserPrefersLight ? 'light' : undefined;
+            const mode = savedMode || browserMode || 'light';
+            const root = document.documentElement;
+            if (mode === 'dark') {
+                root.classList.add('dark');
+                localStorage.setItem('preferredMode', 'dark');
+            } else {
+                root.classList.add('light');
+                localStorage.setItem('preferredMode', 'light');
+            }
+        })();
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Aidan Hert</title>
     <link rel="stylesheet" type="text/css" href="style.css">
