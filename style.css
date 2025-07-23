@@ -19,12 +19,12 @@ html, body {
     transition: all 0.3s ease;
 }
 
-.light {
+html.light {
     background-color: #f9f9f9;
     color: #272727;
 }
 
-.dark {
+html.dark {
     background-color: #222831;
     color: #eeeeee;
 }
@@ -47,20 +47,20 @@ html, body {
     background-color: transparent;
 }
 
-.light-mode-selector.light {
+html.light .light-mode-selector {
     fill: #272727;
 }
 
-#light-mode.dark {
-    display: none;
-}
-
-#dark-mode.light {
-    display: none;
-}
-
-.light-mode-selector.dark {
+html.dark .light-mode-selector {
     fill: #eeeeee;
+}
+
+html.light #dark-mode {
+    display: none;
+}
+
+html.dark #light-mode {
+    display: none;
 }
 
 .light-mode-selector:hover {
@@ -80,11 +80,11 @@ html, body {
     transition: all 0.3s ease;
 }
 
-.icon.light {
+html.light .icon {
     fill: #272727;
 }
 
-.icon.dark {
+html.dark .icon {
     fill: #eeeeee;
 }
 
